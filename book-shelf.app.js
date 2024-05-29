@@ -113,7 +113,7 @@ class BookShelfApp {
 
   _loadFromStorage() {
     let objString = localStorage.getItem(this._storageName);
-    if (objString == "") return [];
+    if (objString == "" || objString == null) return [];
     else return JSON.parse(objString);
   }
 }
