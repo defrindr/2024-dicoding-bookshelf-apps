@@ -68,8 +68,8 @@ class BookShelfApp {
     let payload = {
       title,
       author,
-      year,
-      isComplete,
+      year: Number(year),
+      isComplete: Boolean(isComplete),
       id: Date.now(),
     };
 
